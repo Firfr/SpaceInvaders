@@ -7,7 +7,7 @@ define(['module/HUD'],function(HUD){
     
     var _End = {
         create: function(){
-            HUD.createTitle('  Game Over \n Press Spacebar');
+            HUD.createTitle('  游戏结束 \n 按下空格键重新开始');
                         
             //Starting the Play state after the spacebar is down
             _game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.addOnce(function(){

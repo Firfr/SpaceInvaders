@@ -10,7 +10,7 @@ define(['module/HUD'],function(HUD){
     var _Start = {                    
         create: function(){
             //creating the titel screen
-            HUD.createTitle(' Space Invader \n Press Spacebar');
+            HUD.createTitle(' 太空侵略者 \n 按下空格键开始');
             
             //Seeting up the Physics for the game
             _game.physics.startSystem(Phaser.Physics.ARCADE); 

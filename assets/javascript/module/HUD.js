@@ -21,22 +21,22 @@ define(function(){
         },
         createStat: function(score,health,lives){
             _score = score;
-            _scoreText = _game.add.text(10, 10, "Score: " + score, { fontSize: '34px', fill: '#fff' });
+            _scoreText = _game.add.text(10, 10, "得分: " + score, { fontSize: '34px', fill: '#fff' });
             _health = health;
-            _healthText = _game.add.text(10, 50, "Health: " + health, { fontSize: '34px', fill: '#fff' });
+            _healthText = _game.add.text(10, 50, "生命值: " + health, { fontSize: '34px', fill: '#fff' });
             _lives = lives;
-            _livesText = _game.add.text(10, 90, "Lives: " + lives, { fontSize: '34px', fill: '#fff' });
+            _livesText = _game.add.text(10, 90, "剩余次数: " + lives, { fontSize: '34px', fill: '#fff' });
             
             //_stateText.visible = false;
         },
         updateHealthText: function(health){
-            _healthText.text = "Health: "+health;
+            _healthText.text = "生命值: "+health;
         },
         updateLivesText: function(lives){
-            _livesText.text = "Lives: "+lives;
+            _livesText.text = "剩余次数: "+lives;
         },
         updateScoreText: function(score){
-            _scoreText.text = "Score: "+(_score+=score);
+            _scoreText.text = "得分: "+(_score+=score);
         },
         createTitle: function(title){
             _stateText = _game.add.text(_game.world.centerX,_game.world.centerY,
